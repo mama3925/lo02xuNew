@@ -127,5 +127,13 @@ public class ListPlusHalle {
 		JCheckBox chckbxNewCheckBox = new JCheckBox("reserviste");
 		chckbxNewCheckBox.setBounds(311, 166, 103, 23);
 		frame.getContentPane().add(chckbxNewCheckBox);
+		
+		JCheckBox chckbxNewCheckBox_1 = new JCheckBox("in this zone");
+		chckbxNewCheckBox_1.setBounds(311, 203, 103, 23);
+		frame.getContentPane().add(chckbxNewCheckBox_1);
+		
+		JCheckBox chckbxNewCheckBox_2 = new JCheckBox("alive");
+		chckbxNewCheckBox_2.setBounds(192, 203, 103, 23);
+		frame.getContentPane().add(chckbxNewCheckBox_2);
 	}
 }

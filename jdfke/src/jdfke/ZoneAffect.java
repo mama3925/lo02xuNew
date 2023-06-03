@@ -71,73 +71,68 @@ public class ZoneAffect {
 		frame.getContentPane().add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("0");
-		lblNewLabel_6.setBounds(322, 78, 54, 15);
+		lblNewLabel_6.setBounds(215, 78, 54, 15);
 		frame.getContentPane().add(lblNewLabel_6);
 		
 		JLabel lblNewLabel_7 = new JLabel("0");
-		lblNewLabel_7.setBounds(322, 122, 54, 15);
+		lblNewLabel_7.setBounds(215, 122, 54, 15);
 		frame.getContentPane().add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_8 = new JLabel("0");
-		lblNewLabel_8.setBounds(322, 184, 54, 15);
+		lblNewLabel_8.setBounds(215, 184, 54, 15);
 		frame.getContentPane().add(lblNewLabel_8);
 		
 		JLabel lblNewLabel_9 = new JLabel("0");
-		lblNewLabel_9.setBounds(322, 241, 54, 15);
+		lblNewLabel_9.setBounds(215, 241, 54, 15);
 		frame.getContentPane().add(lblNewLabel_9);
 		
 		JLabel lblNewLabel_10 = new JLabel("0");
-		lblNewLabel_10.setBounds(322, 288, 54, 15);
+		lblNewLabel_10.setBounds(215, 288, 54, 15);
 		frame.getContentPane().add(lblNewLabel_10);
 		
-		JButton btnNewButton = new JButton("-");
-		btnNewButton.addActionListener(new ActionListener() {
-			public void actionPerformed(ActionEvent e) {
-				ListMoinsHalle.OpenMinusHalle(null);
-			}
-		});
-		btnNewButton.setBounds(199, 74, 93, 23);
-		frame.getContentPane().add(btnNewButton);
-		
-		JButton btnNewButton_1 = new JButton("+");
+		JButton btnNewButton_1 = new JButton("+/-");
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
 				ListPlusHalle.OpenPlusHalle(null);
 			}
 		});
-		btnNewButton_1.setBounds(356, 74, 93, 23);
+		btnNewButton_1.setBounds(301, 74, 93, 23);
 		frame.getContentPane().add(btnNewButton_1);
 		
-		JButton btnNewButton_2 = new JButton("-");
-		btnNewButton_2.setBounds(199, 118, 93, 23);
-		frame.getContentPane().add(btnNewButton_2);
-		
-		JButton btnNewButton_3 = new JButton("+");
-		btnNewButton_3.setBounds(356, 118, 93, 23);
+		JButton btnNewButton_3 = new JButton("+/-");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ListPlusHalle.OpenPlusHalle(null);
+			}
+		});
+		btnNewButton_3.setBounds(301, 118, 93, 23);
 		frame.getContentPane().add(btnNewButton_3);
 		
-		JButton btnNewButton_4 = new JButton("-");
-		btnNewButton_4.setBounds(199, 180, 93, 23);
-		frame.getContentPane().add(btnNewButton_4);
-		
-		JButton btnNewButton_5 = new JButton("+");
-		btnNewButton_5.setBounds(356, 180, 93, 23);
+		JButton btnNewButton_5 = new JButton("+/-");
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ListPlusHalle.OpenPlusHalle(null);
+			}
+		});
+		btnNewButton_5.setBounds(301, 180, 93, 23);
 		frame.getContentPane().add(btnNewButton_5);
 		
-		JButton btnNewButton_6 = new JButton("-");
-		btnNewButton_6.setBounds(199, 237, 93, 23);
-		frame.getContentPane().add(btnNewButton_6);
-		
-		JButton btnNewButton_7 = new JButton("+");
-		btnNewButton_7.setBounds(356, 237, 93, 23);
+		JButton btnNewButton_7 = new JButton("+/-");
+		btnNewButton_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ListPlusHalle.OpenPlusHalle(null);
+			}
+		});
+		btnNewButton_7.setBounds(301, 237, 93, 23);
 		frame.getContentPane().add(btnNewButton_7);
 		
-		JButton btnNewButton_8 = new JButton("-");
-		btnNewButton_8.setBounds(199, 284, 93, 23);
-		frame.getContentPane().add(btnNewButton_8);
-		
-		JButton btnNewButton_9 = new JButton("+");
-		btnNewButton_9.setBounds(356, 284, 93, 23);
+		JButton btnNewButton_9 = new JButton("+/-");
+		btnNewButton_9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				ListPlusHalle.OpenPlusHalle(null);
+			}
+		});
+		btnNewButton_9.setBounds(301, 284, 93, 23);
 		frame.getContentPane().add(btnNewButton_9);
 		
 		JButton btnNewButton_10 = new JButton("melee");

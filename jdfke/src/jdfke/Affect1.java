@@ -179,14 +179,6 @@ public class Affect1 {
 		btnNewButton_4.setBounds(20, 349, 93, 23);
 		frmAffectplayer.getContentPane().add(btnNewButton_4);
 		
-		JRadioButton rdbtnNewRadioButton_2 = new JRadioButton("joueur1");
-		rdbtnNewRadioButton_2.setBounds(6, 6, 121, 23);
-		frmAffectplayer.getContentPane().add(rdbtnNewRadioButton_2);
-		
-		JRadioButton rdbtnNewRadioButton_3 = new JRadioButton("joueur2");
-		rdbtnNewRadioButton_3.setBounds(6, 35, 121, 23);
-		frmAffectplayer.getContentPane().add(rdbtnNewRadioButton_3);
-		
 		
 		
 		btnNewButton_1.addActionListener(new ActionListener() {
