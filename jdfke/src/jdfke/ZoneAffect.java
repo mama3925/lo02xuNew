@@ -136,6 +136,11 @@ public class ZoneAffect {
 		frame.getContentPane().add(btnNewButton_9);
 		
 		JButton btnNewButton_10 = new JButton("melee");
+		btnNewButton_10.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				Melee.main(null);
+			}
+		});
 		btnNewButton_10.setBounds(443, 316, 93, 23);
 		frame.getContentPane().add(btnNewButton_10);
 	}

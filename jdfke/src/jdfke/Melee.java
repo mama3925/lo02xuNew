@@ -10,14 +10,13 @@ import javax.swing.JPanel;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.JTextField;
 
 public class Melee {
 
 	private JFrame frame;
 
-	/**
-	 * Launch the application.
-	 */
+	
 	public static void main(String[] args) {
 		EventQueue.invokeLater(new Runnable() {
 			public void run() {
@@ -70,45 +69,99 @@ public class Melee {
 		JButton btnNewButton = new JButton("moi");
 		btnNewButton.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				MoiTreve.main(null);
 			}
 		});
 		btnNewButton.setBounds(10, 10, 93, 23);
 		frame.getContentPane().add(btnNewButton);
 		
 		JButton btnNewButton_1 = new JButton("advers");
+		btnNewButton_1.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AdversCas.main(null);
+			}
+		});
 		btnNewButton_1.setBounds(10, 57, 93, 23);
 		frame.getContentPane().add(btnNewButton_1);
 		
 		JButton btnNewButton_2 = new JButton("moi");
+		btnNewButton_2.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MoiTreve.main(null);
+			}
+		});
 		btnNewButton_2.setBounds(148, 91, 93, 23);
 		frame.getContentPane().add(btnNewButton_2);
 		
 		JButton btnNewButton_3 = new JButton("advers");
+		btnNewButton_3.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AdversCas.main(null);
+			}
+		});
 		btnNewButton_3.setBounds(148, 133, 93, 23);
 		frame.getContentPane().add(btnNewButton_3);
 		
 		JButton btnNewButton_4 = new JButton("moi");
+		btnNewButton_4.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MoiTreve.main(null);
+			}
+		});
 		btnNewButton_4.setBounds(10, 161, 93, 23);
 		frame.getContentPane().add(btnNewButton_4);
 		
 		JButton btnNewButton_5 = new JButton("advers");
+		btnNewButton_5.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AdversCas.main(null);
+			}
+		});
 		btnNewButton_5.setBounds(10, 203, 93, 23);
 		frame.getContentPane().add(btnNewButton_5);
 		
 		JButton btnNewButton_6 = new JButton("moi");
+		btnNewButton_6.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MoiTreve.main(null);
+			}
+		});
 		btnNewButton_6.setBounds(320, 10, 93, 23);
 		frame.getContentPane().add(btnNewButton_6);
 		
 		JButton btnNewButton_7 = new JButton("advers");
+		btnNewButton_7.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AdversCas.main(null);
+			}
+		});
 		btnNewButton_7.setBounds(320, 57, 93, 23);
 		frame.getContentPane().add(btnNewButton_7);
 		
 		JButton btnNewButton_8 = new JButton("moi");
+		btnNewButton_8.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				MoiTreve.main(null);
+			}
+		});
 		btnNewButton_8.setBounds(320, 161, 93, 23);
 		frame.getContentPane().add(btnNewButton_8);
 		
 		JButton btnNewButton_9 = new JButton("advers");
+		btnNewButton_9.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+				AdversCas.main(null);
+			}
+		});
 		btnNewButton_9.setBounds(320, 203, 93, 23);
 		frame.getContentPane().add(btnNewButton_9);
+		
+		JButton btnNewButton_10 = new JButton("simulate wins");
+		btnNewButton_10.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton_10.setBounds(148, 232, 119, 23);
+		frame.getContentPane().add(btnNewButton_10);
 	}
 }

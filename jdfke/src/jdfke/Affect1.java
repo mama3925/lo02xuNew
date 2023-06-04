@@ -1,6 +1,7 @@
 package jdfke;
 
 import java.awt.EventQueue;
+
 import java.util.*;
 
 import javax.swing.JFrame;
@@ -14,7 +15,9 @@ import java.awt.event.ActionEvent;
 import javax.swing.JComboBox;
 import javax.swing.JRadioButton;
 import javax.swing.ButtonGroup;
-
+import java.awt.event.MouseAdapter;
+import java.awt.event.MouseEvent;
+import javax.swing.JOptionPane;
 public class Affect1 {
 
 	private JFrame frmAffectplayer;
@@ -151,9 +154,15 @@ public class Affect1 {
 		frmAffectplayer.getContentPane().add(lblNewLabel_8);
 		
 		JButton btnNewButton_3 = new JButton("etape suivant(zone)");
+		
 		btnNewButton_3.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				ZoneAffect.ouvreZone(null);
+				
+				JOptionPane jop = new JOptionPane(); 
+				int option = jop.showConfirmDialog(null, "Are you sure to continue ?", 
+				"<Titre>", JOptionPane.YES_NO_OPTION, 
+				JOptionPane.QUESTION_MESSAGE);
+				if(option == JOptionPane.OK_OPTION)ZoneAffect.ouvreZone(null);
 				
 			}
 		});
