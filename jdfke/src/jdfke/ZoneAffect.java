@@ -5,6 +5,8 @@ import java.awt.EventQueue;
 
 import javax.swing.JFrame;
 import javax.swing.JLabel;
+import javax.swing.JOptionPane;
+
 import java.awt.BorderLayout;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
@@ -139,7 +141,12 @@ public class ZoneAffect {
 		JButton btnNewButton_10 = new JButton("melee");
 		btnNewButton_10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				Melee.main(null);
+				JOptionPane jop = new JOptionPane(); 
+				int option = jop.showConfirmDialog(null, "Are you sure to start the melee ?", 
+				"<Titre>", JOptionPane.YES_NO_OPTION, 
+				JOptionPane.QUESTION_MESSAGE);
+				if(option == JOptionPane.OK_OPTION)Melee.main(null);
+				
 			}
 		});
 		btnNewButton_10.setBounds(443, 316, 93, 23);
