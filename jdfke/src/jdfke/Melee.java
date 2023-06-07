@@ -2,6 +2,7 @@ package jdfke;
 
 import java.awt.EventQueue;
 
+
 import javax.swing.JFrame;
 import java.awt.FlowLayout;
 import java.awt.BorderLayout;
@@ -11,7 +12,7 @@ import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
-
+import javax.swing.JOptionPane;
 public class Melee {
 
 	private JFrame frame;
@@ -159,6 +160,12 @@ public class Melee {
 		JButton btnNewButton_10 = new JButton("simulate wins");
 		btnNewButton_10.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
+				JOptionPane jop = new JOptionPane(); 
+				int option = jop.showConfirmDialog(null, "Player1 wins, do you want to end the game?", 
+				"<Titre>", JOptionPane.YES_NO_OPTION, 
+				JOptionPane.QUESTION_MESSAGE);
+				if(option == JOptionPane.OK_OPTION)  System.exit(0); 
+				
 			}
 		});
 		btnNewButton_10.setBounds(148, 232, 119, 23);
