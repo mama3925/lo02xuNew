@@ -16,6 +16,7 @@ import javax.swing.JRadioButton;
 import javax.swing.JCheckBox;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
 
 public class ListPlusHalle {
 
@@ -49,14 +50,14 @@ public class ListPlusHalle {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
+		frame.setBounds(100, 100, 601, 425);
 		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
 		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		
 		Panel panel = new Panel();
-		panel.setBounds(0, 0, 91, 232);
+		panel.setBounds(20, 49, 80, 140);
 		frame.getContentPane().add(panel);
 		
 		JScrollPane scrollPane = new JScrollPane();
@@ -73,6 +74,9 @@ public class ListPlusHalle {
 				return values[index];
 			}
 		});
+		
+		JPanel panel_2 = new JPanel();
+		panel.add(panel_2);
 		
 		JPanel panel_1 = new JPanel();
 		panel_1.setBounds(0, 232, 438, 33);
@@ -135,5 +139,14 @@ public class ListPlusHalle {
 		JCheckBox chckbxNewCheckBox_2 = new JCheckBox("alive");
 		chckbxNewCheckBox_2.setBounds(192, 203, 103, 23);
 		frame.getContentPane().add(chckbxNewCheckBox_2);
+		
+		JLabel label = new JLabel("New label");
+		label.setBounds(-23, 0, 49, 14);
+		frame.getContentPane().add(label);
+		
+		JLabel lblNewLabel_6 = new JLabel("New label");
+		lblNewLabel_6.setIcon(new ImageIcon(ListPlusHalle.class.getResource("/imgs/uttflougrand.png")));
+		lblNewLabel_6.setBounds(0, 0, 587, 412);
+		frame.getContentPane().add(lblNewLabel_6);
 	}
 }

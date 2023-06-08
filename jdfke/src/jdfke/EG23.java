@@ -14,6 +14,8 @@ import javax.swing.JMenu;
 import javax.swing.JMenuItem;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 
 public class EG23 {
 
@@ -48,28 +50,41 @@ public class EG23 {
 	private void initialize() {
 		frmCe = new JFrame();
 		frmCe.setTitle("CestDuBrutal");
-		frmCe.setBounds(100, 100, 500, 364);
+		frmCe.setBounds(100, 100, 602, 426);
 		frmCe.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 		frmCe.getContentPane().setLayout(null);
 		
-		JButton btnNewButton = new JButton("Demarrer une partie");
+		JButton btnNewButton = new JButton("Démarrer une partie");
+		btnNewButton.addActionListener(new ActionListener() {
+			public void actionPerformed(ActionEvent e) {
+			}
+		});
+		btnNewButton.setBackground(new Color(128, 255, 0));
+		btnNewButton.setForeground(new Color(0, 0, 0));
 		btnNewButton.addMouseListener(new MouseAdapter() {
 			@Override
 			public void mouseClicked(MouseEvent e) {
 				Affect1.ouvreGestionText(null);
 			}
 		});
-		btnNewButton.setFont(new Font("Calibri", Font.PLAIN, 16));
+		btnNewButton.setFont(new Font("Calibri", Font.PLAIN, 20));
 		
 		
-		btnNewButton.setBounds(143, 190, 184, 48);
+		btnNewButton.setBounds(184, 203, 214, 47);
 		frmCe.getContentPane().add(btnNewButton);
 		
 		JLabel lblNewLabel = new JLabel("La bataille des programmes");
-		lblNewLabel.setFont(new Font("Calibri", Font.PLAIN, 30));
-		lblNewLabel.setBounds(72, 82, 346, 58);
+		lblNewLabel.setForeground(new Color(128, 255, 255));
+		lblNewLabel.setFont(new Font("Calibri", Font.PLAIN, 40));
+		lblNewLabel.setBounds(67, 78, 450, 89);
 		frmCe.getContentPane().add(lblNewLabel);
 		
+		JLabel lblNewLabel_1 = new JLabel("New label");
+		
+		lblNewLabel_1.setBounds(0, 0, 587, 379);
+
+		frmCe.getContentPane().add(lblNewLabel_1);
+		lblNewLabel_1.setIcon(new ImageIcon(EG23.class.getResource("/imgs/uttflougrand.png")));
 		JMenuBar menuBar = new JMenuBar();
 		frmCe.setJMenuBar(menuBar);
 		

@@ -20,6 +20,8 @@ import javax.swing.ButtonGroup;
 import java.awt.event.MouseAdapter;
 import java.awt.event.MouseEvent;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import java.awt.Color;
 public class Affect1 {
 
 	private JFrame frmAffectplayer;
@@ -60,37 +62,44 @@ public class Affect1 {
 	private void initialize() {
 		frmAffectplayer = new JFrame();
 		frmAffectplayer.setTitle("AffectPlayer1");
-		frmAffectplayer.setBounds(100, 100, 592, 430);
-		frmAffectplayer.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frmAffectplayer.setBounds(100, 100, 599, 426);
+		frmAffectplayer.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frmAffectplayer.getContentPane().setLayout(null);
 		
 		JLabel lblNewLabel = new JLabel("parametrage des troupes");
+		lblNewLabel.setForeground(new Color(255, 255, 255));
 		lblNewLabel.setFont(new Font("Calibri", Font.PLAIN, 14));
 		lblNewLabel.setBounds(180, 25, 185, 33);
 		frmAffectplayer.getContentPane().add(lblNewLabel);
 		
-		JLabel lblNewLabel_1 = new JLabel("veuillez repartir vos 400 points dans les categories ci-dessous ");
+		JLabel lblNewLabel_1 = new JLabel("veuillez repartir vos                    points dans les categories ci-dessous ");
+		lblNewLabel_1.setForeground(new Color(255, 255, 255));
 		lblNewLabel_1.setFont(new Font("Calibri", Font.PLAIN, 12));
-		lblNewLabel_1.setBounds(10, 58, 377, 42);
+		lblNewLabel_1.setBounds(6, 58, 377, 42);
 		frmAffectplayer.getContentPane().add(lblNewLabel_1);
 		
 		JLabel lblNewLabel_2 = new JLabel("force");
+		lblNewLabel_2.setForeground(new Color(255, 255, 255));
 		lblNewLabel_2.setBounds(148, 125, 54, 15);
 		frmAffectplayer.getContentPane().add(lblNewLabel_2);
 		
 		JLabel lblNewLabel_3 = new JLabel("dexterite");
+		lblNewLabel_3.setForeground(new Color(255, 255, 255));
 		lblNewLabel_3.setBounds(148, 164, 54, 15);
 		frmAffectplayer.getContentPane().add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("resistance");
+		lblNewLabel_4.setForeground(new Color(255, 255, 255));
 		lblNewLabel_4.setBounds(148, 219, 75, 23);
 		frmAffectplayer.getContentPane().add(lblNewLabel_4);
 		
 		JLabel lblNewLabel_5 = new JLabel("constitution");
+		lblNewLabel_5.setForeground(new Color(255, 255, 255));
 		lblNewLabel_5.setBounds(148, 278, 75, 15);
 		frmAffectplayer.getContentPane().add(lblNewLabel_5);
 		
 		JLabel lblNewLabel_6 = new JLabel("initiative");
+		lblNewLabel_6.setForeground(new Color(255, 255, 255));
 		lblNewLabel_6.setBounds(148, 326, 67, 15);
 		frmAffectplayer.getContentPane().add(lblNewLabel_6);
 		
@@ -148,11 +157,13 @@ public class Affect1 {
 		frmAffectplayer.getContentPane().add(btnNewButton_2);
 		
 		JLabel lblNewLabel_7 = new JLabel("Etudiant");
-		lblNewLabel_7.setBounds(392, 32, 54, 15);
+		lblNewLabel_7.setForeground(new Color(255, 255, 255));
+		lblNewLabel_7.setBounds(351, 43, 93, 15);
 		frmAffectplayer.getContentPane().add(lblNewLabel_7);
 		
 		JLabel lblNewLabel_8 = new JLabel("1");
-		lblNewLabel_8.setBounds(457, 32, 54, 15);
+		lblNewLabel_8.setForeground(new Color(255, 255, 255));
+		lblNewLabel_8.setBounds(457, 43, 54, 15);
 		frmAffectplayer.getContentPane().add(lblNewLabel_8);
 		
 		JButton btnNewButton_3 = new JButton("etape suivant(zone)");
@@ -181,8 +192,9 @@ public class Affect1 {
 		rdbtnNewRadioButton_1.setBounds(6, 205, 121, 23);
 		frmAffectplayer.getContentPane().add(rdbtnNewRadioButton_1);
 		
-		JLabel lblNewLabel_9 = new JLabel("restes");
-		lblNewLabel_9.setBounds(418, 58, 121, 42);
+		JLabel lblNewLabel_9 = new JLabel("400");
+		lblNewLabel_9.setForeground(new Color(255, 255, 255));
+		lblNewLabel_9.setBounds(118, 56, 121, 42);
 		frmAffectplayer.getContentPane().add(lblNewLabel_9);
 		
 		JButton btnNewButton_4 = new JButton("back");
@@ -190,20 +202,47 @@ public class Affect1 {
 		btnNewButton_4.setBounds(20, 349, 93, 23);
 		frmAffectplayer.getContentPane().add(btnNewButton_4);
 		
+		JLabel lblNewLabel_10 = new JLabel("New label");
+		lblNewLabel_10.setIcon(new ImageIcon(Affect1.class.getResource("/imgs/uttflougrand.png")));
+		lblNewLabel_10.setBounds(0, 0, 589, 393);
+		frmAffectplayer.getContentPane().add(lblNewLabel_10);
+		
+		JLabel lblNewLabel_11 = new JLabel("1");
+		lblNewLabel_11.setBounds(495, 10, 75, 30);
+		frmAffectplayer.getContentPane().add(lblNewLabel_11);
+		
 		
 		
 		btnNewButton_1.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int pv; 
-				pv= Integer.valueOf(lblNewLabel_8.getText());
-				if(pv < 20) lblNewLabel_8.setText(String.valueOf(pv+1));
+				int pv;
+				pv= Integer.valueOf(lblNewLabel_11.getText());
+				if(pv < 20) {
+					lblNewLabel_11.setText(String.valueOf(pv+1));
+				 
+					if(pv == 15) lblNewLabel_7.setText("EtudiantElite");
+					else if(pv == 19)lblNewLabel_7.setText("MaitreDuGobi");
+				
+					if(pv == 14) lblNewLabel_8.setText("15");
+					else if(pv == 19)lblNewLabel_8.setText(null);
+					else lblNewLabel_8.setText(String.valueOf((pv+1)%15));
+					}
 			}
 		});
 		btnNewButton_2.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent e) {
-				int pv; 
-				pv= Integer.valueOf(lblNewLabel_8.getText());
-				if(pv > 1) lblNewLabel_8.setText(String.valueOf(pv-1));
+					int pv; 
+					pv= Integer.valueOf(lblNewLabel_11.getText());
+					if(pv > 1) {
+						lblNewLabel_11.setText(String.valueOf(pv-1));
+					
+					
+						if(pv == 20) lblNewLabel_7.setText("EtudiantElite");
+						else if(pv == 16) lblNewLabel_7.setText("Etudiant");
+					
+						if(pv == 16) lblNewLabel_8.setText("15");
+						else lblNewLabel_8.setText(String.valueOf((pv-1)%15));
+					}
 			}
 		});
 		btnNewButton.addActionListener(new ActionListener() {
@@ -220,10 +259,17 @@ public class Affect1 {
 				int whole;
 				String textreste=lblNewLabel_9.getText();
 				
-				if(textreste.equals("restes")) whole=400;
+				if(Integer.parseInt(textreste) == 400) whole=400;
 				else whole=Integer.parseInt(lblNewLabel_9.getText());
 				
-				lblNewLabel_9.setText(String.valueOf(whole-totalamount));
+				if((whole-totalamount) >= 0) lblNewLabel_9.setText(String.valueOf(whole-totalamount));
+				else {
+					JOptionPane jop = new JOptionPane(); 
+					int option = jop.showConfirmDialog(null, "You can't give the points, because it's not enough !", 
+					"<Titre>", JOptionPane.YES_NO_OPTION, 
+					JOptionPane.QUESTION_MESSAGE);
+					
+				}
 			}
 		});
 	}

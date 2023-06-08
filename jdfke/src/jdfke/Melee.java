@@ -13,6 +13,9 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import javax.swing.JTextField;
 import javax.swing.JOptionPane;
+import javax.swing.ImageIcon;
+import java.awt.Font;
+import java.awt.Color;
 public class Melee {
 
 	private JFrame frame;
@@ -43,28 +46,38 @@ public class Melee {
 	 */
 	private void initialize() {
 		frame = new JFrame();
-		frame.setBounds(100, 100, 450, 300);
-		frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+		frame.setBounds(100, 100, 601, 449);
+		frame.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
 		frame.getContentPane().setLayout(null);
 		
-		JLabel lblNewLabel = new JLabel("halle");
-		lblNewLabel.setBounds(36, 41, 54, 15);
+		JLabel lblNewLabel = new JLabel("halle s.");
+		lblNewLabel.setForeground(new Color(255, 0, 0));
+		lblNewLabel.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel.setBounds(23, 37, 67, 15);
 		frame.getContentPane().add(lblNewLabel);
 		
 		JLabel lblNewLabel_1 = new JLabel("quartier");
-		lblNewLabel_1.setBounds(36, 187, 54, 15);
+		lblNewLabel_1.setForeground(new Color(255, 0, 0));
+		lblNewLabel_1.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_1.setBounds(20, 187, 93, 15);
 		frame.getContentPane().add(lblNewLabel_1);
 		
-		JLabel lblNewLabel_2 = new JLabel("biblio");
-		lblNewLabel_2.setBounds(344, 41, 54, 15);
+		JLabel lblNewLabel_2 = new JLabel(" bibliothèque");
+		lblNewLabel_2.setForeground(new Color(255, 0, 0));
+		lblNewLabel_2.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_2.setBounds(307, 37, 119, 15);
 		frame.getContentPane().add(lblNewLabel_2);
 		
-		JLabel lblNewLabel_3 = new JLabel("halles");
-		lblNewLabel_3.setBounds(344, 187, 54, 15);
+		JLabel lblNewLabel_3 = new JLabel("halles i.");
+		lblNewLabel_3.setForeground(new Color(255, 0, 0));
+		lblNewLabel_3.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_3.setBounds(330, 187, 68, 15);
 		frame.getContentPane().add(lblNewLabel_3);
 		
 		JLabel lblNewLabel_4 = new JLabel("BDE");
-		lblNewLabel_4.setBounds(184, 117, 54, 15);
+		lblNewLabel_4.setForeground(new Color(255, 0, 0));
+		lblNewLabel_4.setFont(new Font("Tahoma", Font.PLAIN, 20));
+		lblNewLabel_4.setBounds(174, 112, 54, 23);
 		frame.getContentPane().add(lblNewLabel_4);
 		
 		JButton btnNewButton = new JButton("moi");
@@ -170,5 +183,10 @@ public class Melee {
 		});
 		btnNewButton_10.setBounds(148, 232, 119, 23);
 		frame.getContentPane().add(btnNewButton_10);
+		
+		JLabel lblNewLabel_5 = new JLabel("New label");
+		lblNewLabel_5.setIcon(new ImageIcon(Melee.class.getResource("/imgs/uttfloubleugrand.png")));
+		lblNewLabel_5.setBounds(0, 8, 587, 412);
+		frame.getContentPane().add(lblNewLabel_5);
 	}
 }
