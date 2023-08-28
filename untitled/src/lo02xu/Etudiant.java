@@ -6,18 +6,18 @@ import java.util.Scanner;
 public class Etudiant{
     private int numEtu;//the no. of student
     private int ects;// the life value of student
-    private int dexterite;
+    private int dexterite; // the 5 from dexterite to initiative is the property for fight
     private int force;
     private int resistance;
     private int constitution;
-    private int initiative;
-    private Strategie strategie;
-    private boolean reserviste;
+    private int initiative; //the 5 from dexterite to initiative is the property for fight
+    private Strategie strategie; // decide to attack enermy or cure the mates
+    private boolean reserviste;// to set 5, who does not participate in the combat
 
     //private Strategie strategie;
-    private Zone zone;
-    private Filiere filiere;
-    private Joueur joueur;
+    private Zone zone; //
+    private Filiere filiere; // maybe useless property
+    private Joueur joueur; //
 
     public Etudiant(int numEtu,Joueur joueur){
         this.ects=30;
