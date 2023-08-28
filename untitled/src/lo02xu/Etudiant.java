@@ -16,13 +16,13 @@ public class Etudiant{
 
     //private Strategie strategie;
     private Zone zone; //
-    private Filiere filiere; // maybe useless property
-    private Joueur joueur; //
+    private Filiere filiere; // to identify it belongs to which player
+    private Joueur joueur; // one player has 30 students(including the etudiantelite and the maitre du gobi)
 
     public Etudiant(int numEtu,Joueur joueur){
-        this.ects=30;
-        this.dexterite=0;
-        this.force=0;
+        this.ects=30; //student has 30 points of life
+        this.dexterite=0; // dexterite has 
+        this.force=0; //
         this.resistance=0;
         this.constitution=0;
         this.initiative=0;
