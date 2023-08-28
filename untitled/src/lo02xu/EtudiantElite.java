@@ -2,10 +2,10 @@ package lo02xu;
 
 import java.util.Scanner;
 
-public class EtudiantElite extends Etudiant {
+public class EtudiantElite extends Etudiant {//this is a subclass of Etudiant, you can refer to the class Etudiant
     public EtudiantElite(int numEtu, Joueur joueur) {
         super(numEtu, joueur);
-        this.setDexterite(1);
+        this.setDexterite(1);// the initial property is higher than normal students, it's 1 1 1 5 1
         this.setForce(1);
         this.setResistance(1);
         this.setConstitution(5);
@@ -13,6 +13,7 @@ public class EtudiantElite extends Etudiant {
     }
 
     public String afficherEtu() {
+        //to display the features of this EtudiantElite
         StringBuffer sb = new StringBuffer();
         sb.append("the EtudiantElite " + this.getNumEtu() + " of filiere " + this.getFiliere() + " has\n");
         sb.append(this.getEcts() + " ects\n");

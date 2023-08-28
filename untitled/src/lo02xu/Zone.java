@@ -3,13 +3,13 @@ package lo02xu;
 import java.util.*;
 
 public class Zone {
-    private NomZone nomZone;
-    private static int numZone = 0;
-    private ArrayList<Etudiant> listEtu;
-    private int numOfEtu;
-    private int indexZone;
-    private int controlee;
-    private Control control;
+    private NomZone nomZone;//maybe useless, just because the annex of the project requires this property
+    private static int numZone = 0;//static variable, just used to initialization, to set 5 zone names
+    private ArrayList<Etudiant> listEtu;//the students in this zone
+    private int numOfEtu;//maybe useless, maybe we use it to guarantee that it has at least 1 student in this zone.
+    private int indexZone;//very important, it's the ID of the zone (1,2,3,4,5)
+    private int controlee;//to see if it's controlled or not
+    private Control control;//one object control has 2 objects player.
 
     public Zone(Control control) {
         numOfEtu = 0;
