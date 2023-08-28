@@ -4,8 +4,8 @@ import java.util.Comparator;
 import java.util.Scanner;
 
 public class Etudiant{
-    private int numEtu;//the value of student's life
-    private int ects;// 
+    private int numEtu;//the no. of student
+    private int ects;// the life value of student
     private int dexterite;
     private int force;
     private int resistance;
