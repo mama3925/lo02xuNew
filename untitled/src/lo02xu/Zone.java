@@ -88,10 +88,10 @@ public class Zone {
             int flag1 = 0;
             int flag2 = 0;
             for (Etudiant etu : tempListEtuJou1) {
-                flag1 += etu.getEcts();
+                flag1 += etu.getEcts(); //in fact it's stupid to add this line here, because we have written a function for adding the total ects
             }
             for (Etudiant etu : tempListEtuJou2) {
-                flag2 += etu.getEcts();
+                flag2 += etu.getEcts(); //in fact it's stupid to add this line here, because we have written a function for addingt the total ects
             }
             if (flag1 == 0) {
                 this.controlee = 2;
