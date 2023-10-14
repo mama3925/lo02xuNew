@@ -59,10 +59,10 @@ public class Control {
                         }
                     }
 
-                    if (this.joueurs.get(0).getListZoneControlee().size() >= 3) {
+                    if (this.joueurs.get(0).gagneOuPas()) {
                         drapeau = 1;
                         break;
-                    } else if (this.joueurs.get(1).getListZoneControlee().size() >= 3) {
+                    } else if (this.joueurs.get(1).gagneOuPas()) {
                         drapeau = 2;
                         break;
                     } else {
@@ -80,6 +80,8 @@ public class Control {
             }
         }
 
+        if (drapeau == 1) System.out.println("player 1 wins");
+        if (drapeau == 2) System.out.println("player 2 wins");
     }
 
     public void treveWinner(Zone zone, int flag) {

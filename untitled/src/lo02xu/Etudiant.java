@@ -199,12 +199,12 @@ public class Etudiant {
 
     public void choisirStrategie() {//choose the strategy for this student, so that the student can attack enemy or cure mate according to his property "strategy"
         System.out.println("Now you should choose a strategie for the student " + this.numEtu + "\n");
-        System.out.println("input 0 for offensive, input 1 for defensive\n");
+        System.out.println("input 0 for offensive, input 1 for defensive, input 2 for aleatoire\n");
         Scanner sc = new Scanner(System.in);
         int index = sc.nextInt();//to input a number 0 or 1, 0 means offensive, 1 means defensive;
 
-        while (index != 0 && index != 1) {
-            System.out.println("You should input a number 0 or 1. The other is not allowed\n");
+        while (index != 0 && index != 1 && index != 3) {
+            System.out.println("You should input a number 0, 1 or 2. The other is not allowed\n");
             index = sc.nextInt();
         }
 
@@ -215,6 +215,9 @@ public class Etudiant {
         } else if (index == 1) {
             Defensive defensive = new Defensive();
             this.strategie = defensive;
+        } else if (index == 2) {
+            Aleatoire aleatoire = new Aleatoire();
+            this.strategie = aleatoire;
         }
 
     }

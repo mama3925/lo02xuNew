@@ -27,10 +27,9 @@ public class Offensive implements Strategie {
         listEtu.sort(Etudiant.comparatorEcts);
         Etudiant attaque = listEtu.get(0);
         int i = 1;
-        while (attaque.getJoueur() == attaquant.getJoueur() || attaque.isReserviste() == true) {
-            attaque = listEtu.get(i);
-            i++;
-        }
+        while (attaque.getJoueur() == attaquant.getJoueur() || attaque.isReserviste())  i++;
+
+        attaque = listEtu.get(i);
 
         Random random = new Random();
         int x = random.nextInt(101);
